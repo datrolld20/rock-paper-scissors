@@ -1,1 +1,53 @@
-<script src="script.js"></script>
+<!DOCTYPE html>
+<head>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="game-window">
+        <div id="black-screen"></div>
+        <div id="top-panel">
+            <div id="player-score" class="score">0</div>
+            <div id="round-counter">Round 1</div>
+            <div id="cpu-score" class="score">
+                0
+            </div>
+            
+        </div>
+
+        <div id="message">Choose your weapon!</div>
+
+        <div id="next-round" class="center-buttons btn invisible">Next Round</div>
+        <div id="reset" class="center-buttons btn invisible">Reset</div>
+
+        <div id="battlefield">
+            <div id="player-side">
+                <div id="player-avatar-container" class="avatar-container">
+                    <img src="./img/test_man.png">
+                </div>
+                <div id="choices-container">
+                    <div id="rock" class="choice btn">
+                        <img src="img/rock-clipped.png">
+                    </div>
+                    <div id="paper" class="choice btn">
+                        <img src="img/paper-clipped.png">
+                    </div>
+                    <div id="scissors" class="choice btn">
+                        <img src="img/scissors-clipped.png">
+                    </div>
+                </div>
+            </div>
+            <div id="cpu-side">
+                <div id="cpu-avatar-container" class="avatar-container">
+                    <img src="./img/test_robot.png">
+                </div>
+                <div id="cpu-choosing">
+                    <img src="" id="cpu-choice">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+<script src="ui-script.js"></script>
